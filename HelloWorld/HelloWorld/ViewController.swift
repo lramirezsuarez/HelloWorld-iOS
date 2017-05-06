@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var helloLabel: UILabel!
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var changeButton: UIButton!
+    @IBOutlet weak var yearsLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,10 +21,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func didPressButton(_ sender: Any) {
         if(self.nameText.text != "") {
-            helloLabel.text = "Hello \(nameText.text!)! Welcome to this app."
+            let years = Int(nameText.text!)! * 4
+            yearsLabel.text = "\(years)"
             nameText.text = ""
         } else {
-            displayMessage(message: "Write something in the text field.")
+            displayMessage(message: "Invalid number of years.")
         }
     }
     
