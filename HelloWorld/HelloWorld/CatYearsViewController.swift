@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class CatYearsViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var helloLabel: UILabel!
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var changeButton: UIButton!

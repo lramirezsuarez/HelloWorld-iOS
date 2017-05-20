@@ -57,4 +57,95 @@ if username == "Lucho" && password == "123456" {
 
 //Generate a random number.
 
-let randFinger = arc4random(6)
+let randFinger = arc4random_uniform(6)
+
+
+// While loop.
+
+var mult = 1
+
+while (mult<=20) {
+    print(7*mult)
+    mult += 1
+}
+
+var arrWhile = [7, 23, 45, 70, 98, 0]
+var k = 0
+while (k < arrWhile.count) {
+    arrWhile[k] += 1
+    k += 1
+}
+
+print(arrWhile)
+
+//For loop
+
+let arrayFor = ["Eliza", "Julian", "Luis Alberto", "Luz Elena"]
+
+for name in arrayFor {
+    print("Hi there \(name)!")
+}
+
+var arrHalve : [Double] = [8, 7, 19, 28]
+
+for (index, data) in arrHalve.enumerated() {
+    arrHalve[index] = data / 2
+}
+print(arrHalve)
+
+
+//Classes and Objects
+
+class Ghost {
+    var isAlive = true
+    
+    var strenght = 0
+    
+    func kill() {
+        isAlive = false
+    }
+    
+    func isStrong() -> Bool {
+        if (strenght > 10) {
+            return true
+        } else {
+            return false
+        }
+    }
+}
+
+var pinky = Ghost()
+
+pinky.isAlive
+pinky.isStrong()
+
+pinky.strenght = 20
+
+pinky.isStrong()
+
+print(pinky.isAlive)
+print(pinky.strenght)
+
+print(pinky.isStrong())
+
+pinky.kill()
+
+print(pinky.isAlive)
+
+//Optionals
+
+var number : Int?
+
+print(number)
+
+let userEnteredText = "5"
+
+let userEnteredInteger = Int(userEnteredText)
+
+if let variableAsigned = userEnteredInteger {
+    print(variableAsigned * 7)
+} else {
+    print("The user entered text is not a number")
+}
+
+
