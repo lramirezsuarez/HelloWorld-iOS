@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3qH-w2-tPc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KNy-1U-Qjk">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -170,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SKa-dY-JJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="844.0140845070423"/>
+            <point key="canvasLocation" x="1607" y="139"/>
         </scene>
         <!--Fingers View Controller-->
         <scene sceneID="sny-4F-WEC">
@@ -237,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CnB-5A-m9n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1077.5999999999999" y="138.98050974512745"/>
+            <point key="canvasLocation" x="859" y="139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0EW-fj-rF3">
@@ -252,13 +252,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alignet to top of screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uuU-hm-0Y3">
-                                <rect key="frame" x="118" y="20" width="179" height="21"/>
+                                <rect key="frame" x="118" y="64" width="179" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Align to label above" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGf-r2-w3C">
-                                <rect key="frame" x="132" y="49" width="150" height="21"/>
+                                <rect key="frame" x="132" y="93" width="150" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -275,23 +275,70 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pqW-YE-wmU">
+                                <rect key="frame" x="47" y="287" width="321" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk2-lP-Bp8">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
+                                        <state key="normal" title="Cat Years"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="tMc-h3-xd8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4mR-5k-HeI">
+                                        <rect key="frame" x="107" y="0.0" width="107" height="30"/>
+                                        <state key="normal" title="Fingers"/>
+                                        <connections>
+                                            <segue destination="bCs-DQ-dGW" kind="show" id="E8f-JJ-CQa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRs-b1-Umg">
+                                        <rect key="frame" x="214" y="0.0" width="107" height="30"/>
+                                        <state key="normal" title="Prime Numbers"/>
+                                        <connections>
+                                            <segue destination="3qH-w2-tPc" kind="show" id="mRF-PB-eRv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gGf-r2-w3C" firstAttribute="top" secondItem="uuU-hm-0Y3" secondAttribute="bottom" constant="8" id="7UD-2D-hcC"/>
+                            <constraint firstItem="pqW-YE-wmU" firstAttribute="top" secondItem="gGf-r2-w3C" secondAttribute="bottom" constant="173" id="7nu-RJ-0tA"/>
                             <constraint firstItem="uuU-hm-0Y3" firstAttribute="centerX" secondItem="ZwY-2z-O1Q" secondAttribute="centerX" id="IkH-46-bQG"/>
                             <constraint firstItem="gGf-r2-w3C" firstAttribute="centerX" secondItem="ZwY-2z-O1Q" secondAttribute="centerX" id="KYJ-EA-MsL"/>
                             <constraint firstItem="wHP-5w-cio" firstAttribute="centerY" secondItem="ZwY-2z-O1Q" secondAttribute="centerY" id="MRl-Vn-ZXm"/>
                             <constraint firstItem="wHP-5w-cio" firstAttribute="centerX" secondItem="ZwY-2z-O1Q" secondAttribute="centerX" id="NdI-J4-0It"/>
                             <constraint firstItem="uuU-hm-0Y3" firstAttribute="top" secondItem="uFq-SC-9LW" secondAttribute="bottom" id="OW9-yO-NwR"/>
+                            <constraint firstItem="pqW-YE-wmU" firstAttribute="centerX" secondItem="ZwY-2z-O1Q" secondAttribute="centerX" id="UfF-cR-Hl3"/>
                             <constraint firstItem="jcN-yB-sGT" firstAttribute="centerX" secondItem="ZwY-2z-O1Q" secondAttribute="centerX" id="czg-2D-tJh"/>
                             <constraint firstItem="Oze-7y-DNc" firstAttribute="top" secondItem="jcN-yB-sGT" secondAttribute="bottom" constant="20" id="sNo-hZ-jzX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ZCw-yJ-Brh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="woh-Fh-gTg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905" y="139"/>
+            <point key="canvasLocation" x="1225" y="-605"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ahD-WQ-g4L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KNy-1U-Qjk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jtc-1g-4Lg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="u1b-4L-fck" kind="relationship" relationship="rootViewController" id="vay-gE-zvA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wta-c6-7lT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="509" y="-605"/>
         </scene>
     </scenes>
     <resources>
