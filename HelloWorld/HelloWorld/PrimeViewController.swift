@@ -20,7 +20,7 @@ class PrimeViewController: UIViewController {
 
     @IBAction func didVerifyPrime(_ sender: Any) {
         if let number = Int(numberText.text!) {
-            if (number%2 != 1 || number == 1) {
+            if ((number%2 != 1 || number == 1) && number != 2) {
                 resultsLabel.text = "The \(number) is not a prime number"
                 numberText.text = ""
             } else {
